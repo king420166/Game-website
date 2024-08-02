@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Games Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Professional Games Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Game Collection</h2>
+            <p>Explore and enjoy a variety of simple, yet engaging games.</p>
+        </section>
+        <section id="games">
+            <h2>Our Games</h2>
+            <div class="game-container">
+                <!-- Click the Button Game -->
+                <div class="game" id="clickButtonGame">
+                    <h3>Click the Button</h3>
+                    <p>Score: <span id="clickScore">0</span></p>
+                    <button id="clickButton">Click Me!</button>
+                </div>
+
+                <!-- Number Guessing Game -->
+                <div class="game" id="numberGuessingGame">
+                    <h3>Number Guessing Game</h3>
+                    <input type="number" id="guessInput" placeholder="Enter a number" />
+                    <button id="guessButton">Guess</button>
+                    <p id="guessResult"></p>
+                </div>
+
+                <!-- Tic-Tac-Toe -->
+                <div class="game" id="ticTacToeGame">
+                    <h3>Tic-Tac-Toe</h3>
+                    <div id="ticTacToeBoard">
+                        <!-- 3x3 grid -->
+                        <button class="ticTacToeCell" data-cell="0"></button>
+                        <button class="ticTacToeCell" data-cell="1"></button>
+                        <button class="ticTacToeCell" data-cell="2"></button>
+                        <button class="ticTacToeCell" data-cell="3"></button>
+                        <button class="ticTacToeCell" data-cell="4"></button>
+                        <button class="ticTacToeCell" data-cell="5"></button>
+                        <button class="ticTacToeCell" data-cell="6"></button>
+                        <button class="ticTacToeCell" data-cell="7"></button>
+                        <button class="ticTacToeCell" data-cell="8"></button>
+                    </div>
+                    <p id="ticTacToeResult"></p>
+                </div>
+
+                <!-- Simple Calculator -->
+                <div class="game" id="calculatorGame">
+                    <h3>Simple Calculator</h3>
+                    <input type="number" id="num1" placeholder="Number 1" />
+                    <input type="number" id="num2" placeholder="Number 2" />
+                    <button id="addButton">Add</button>
+                    <button id="subtractButton">Subtract</button>
+                    <p id="calcResult"></p>
+                </div>
+
+                <!-- Color Guessing Game -->
+                <div class="game" id="colorGuessingGame">
+                    <h3>Color Guessing Game</h3>
+                    <p id="colorDisplay"></p>
+                    <input type="text" id="colorInput" placeholder="Guess the color" />
+                    <button id="colorGuessButton">Guess</button>
+                    <p id="colorGuessResult"></p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are passionate about creating fun and engaging games for all ages.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please reach out via our contact form.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Professional Games Website. All rights reserved.</p>
+    </footer>
+    <script src="game.js"></script>
+</body>
+</html>
